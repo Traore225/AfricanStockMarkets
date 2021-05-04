@@ -1,0 +1,24 @@
+#' @title RWANDA Stock Exchange Bonds 
+#' 
+#' @description A simple \code{tibble} on evolution of RWANDA Exchange Bonds
+#' 
+#' @importFrom dplyr tibble %>%
+#' @importFrom DBI dbConnect dbSendQuery dbFetch
+#' 
+#' @format A \code{tiblle} with 8 column, which are :
+#' 
+#' \describe{
+#' 
+#' \item{nompays}{A \code{character} column. The names of countries}
+#' \item{nombourse}{A \code{character} column. Names of stock market}
+#' \item{devise}{A \code{character} column. Official currency of countries}
+#' \item{code_obligation}{A \code{character} column. Code assigned to bonds}
+#' \item{num_jourO}{A \code{Numeric} column. Data collection day}
+#' \item{ValeurOb}{A \code{Numeric} column. Bond value}
+#' \item{VariationOb}{A \code{Numeric} column. percentage change in bond value}
+#' \item{VolumeOb}{A \code{Numeric} column. Volume traded}
+#' 
+#' 
+#' }
+#' 
+"bonds_RWD"

@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# AfricanStockMarkets
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of AfricanStockMarkets is to make a dataset on values of securities and indices of African stock markets for R community.
+
+## Installation
+
+You can install the released version of AfricanStockMarkets from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("AfricanStockMarkets")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Traore225/AfricanStockMarkets")
+```
+## Example
+
+This is a basic example which shows you how to use it:
+
+```{r example}
+library(AfricanStockMarkets)
+
+knitr::kable(head(bonds_AZF), 'html', caption = "South Africa stock market bonds")
+
+summary(bonds_AZF)
+
+```

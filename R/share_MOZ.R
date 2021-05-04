@@ -1,6 +1,6 @@
-#' @title COTE D'IVOIRE Stock Exchange shares 
+#' @title MOZAMBIQUE Stock Exchange shares 
 #' 
-#' @description A simple \code{tibble} on evolution of COTE D'IVOIRE Exchange shares
+#' @description A simple \code{tibble} on evolution of MOZAMBIQUE Exchange shares
 #' 
 #' @importFrom dplyr tibble %>%
 #' @importFrom DBI dbConnect dbSendQuery dbFetch
@@ -18,4 +18,4 @@
 #' 
 #' }
 #' 
-"share_CIV"
+"share_MOZ"

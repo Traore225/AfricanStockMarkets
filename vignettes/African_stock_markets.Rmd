@@ -1,0 +1,52 @@
+---
+title: "How to use AfricanStockMarkets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to use AfricanStockMarkets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "  "
+)
+```
+
+```{r setup}
+library(AfricanStockMarkets)
+
+```
+
+there are several types of data in this package:
+
+first we have a set of data on the indices of the various African stock markets
+
+```{r}
+knitr::kable(head(indices))
+
+summary(indices)
+```
+
+
+Then we have a set of data on company shares by stock market. 
+Example that of NIGERIA:
+
+```{r}
+knitr::kable(head(share_NGA), format = 'html', caption = "Value of NIGERIA companies shares" )
+
+summary(share_NGA)
+
+```
+
+Finally, we have a set of data on bonds by stock market. 
+Example that of South Africa:
+
+```{r}
+knitr::kable(head(bonds_AZF), format = 'html', caption = "Value of NIGERIA stock market bonds")
+
+summary(bonds_AZF)
+
+```
+
